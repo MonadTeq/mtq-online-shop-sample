@@ -1,0 +1,15 @@
+{
+  "Vue3 Composable code structure one-click generation": {
+    "prefix": "Vue3 Composable",
+    "body": [
+      "const refName1 = ref<string>(\"This is a reactive variable\")\n",
+      "export function useName() {",
+      "\tconst refName2 = ref<string>(\"This is a reactive variable\")\n",
+      "\tconst fnName = () => {}\n",
+      "\treturn { refName1, refName2, fnName }",
+      "}",
+      "$1"
+    ],
+    "description": "Vue3 Composable"
+  }
+}

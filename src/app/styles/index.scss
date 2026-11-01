@@ -1,0 +1,61 @@
+// Primitive tokens (raw palette, spacing, radius)
+@import "@/shared/styles/tokens/primitives.css";
+// Semantic schemes (one file per scheme, data-theme scoped)
+@import "./themes/normal.css";
+@import "./themes/dark.css";
+@import "./themes/dark-blue.css";
+// Global layout variables
+@import "./variables.css";
+// Transition
+@import "./transition.scss";
+// Element Plus
+@import "./element-plus.scss";
+// Mixins
+@import "@/shared/styles/mixins.scss";
+// View Transition
+@import "./view-transition.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-page);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    Inter, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial,
+    sans-serif;
+  @extend %scrollbar;
+}
+
+#app {
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+// Responsive product grid (composed of ProductCard widgets in pages)
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
