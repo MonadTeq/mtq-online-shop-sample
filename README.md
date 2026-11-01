@@ -100,10 +100,10 @@ pnpm codegen:api
 
 ```bash
 # Clone the project
-git clone git@github.com:MonadTeq/mtq-uix-vue-template.git
+git clone https://github.com/MonadTeq/mtq-online-shop-sample.git
 
 # Enter the project directory
-cd mtq-uix-vue-template
+cd mtq-online-shop-sample
 
 # Install dependencies
 pnpm i
